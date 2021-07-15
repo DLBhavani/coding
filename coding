@@ -1,0 +1,22 @@
+#print("Become the programmer you're meant to be!")
+a ={
+    "A":"Hello",
+    "B":"World",
+    "C":"Buddy",
+    "D":"Welcome"
+}
+v = input().split()
+x = ""
+for i in v:
+    if i=="A" or i=="B" or i=="C" or i=="D":
+        x=x+i
+    elif i =="and":
+        x=x+" and "
+        
+#print(x)
+for i in x.split(" "):
+    if len(i) == 2:
+        vv = sorted(i)
+        print(a[vv[0]],end="")
+    elif len(i)==1:
+        print(a[i],end="")
